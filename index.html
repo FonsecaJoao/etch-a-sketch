@@ -9,8 +9,10 @@
 </head>
 <body>
     <h1>Etch-A-Sketch</h1>
-    <input type="number" name="pixel" id="pixel" value="16" min="0" max="64" required>
-    <button onclick="buildGrid()"></button>
+    <div class="row">
+        <input type="number" name="pixel" id="pixel" value="16" min="0" max="64" required>
+        <button id="submit" onclick="buildGrid()">Enter Value</button>
+    </div>
     <div id="grid">
 
     </div>

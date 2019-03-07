@@ -17,19 +17,29 @@ h1 {
     text-align: center;
 }
 
+input {
+    height: 40px;
+}
+
+div.row {
+    display: inline;
+    margin-left: 35vw;
+}
+
 button {
     margin-left: 43vw;
     height: 100px;
     width: 200px;
 }
 
-input[type='number'] {
-    margin-left: 45vw;
+button#submit {
+    height: 50px;
+    margin-left: 0;
 }
 
 #grid {
     position: relative;
-    margin: 10vh 30vw 1vh 35vw;
+    margin: 2vh 30vw 2vh 32vw;
     display: flex;
     flex-wrap: wrap;
     background-color: white;

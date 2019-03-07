@@ -1,3 +1,8 @@
+@font-face {
+    font-family: SUBWT;
+    src: url('../SUBWT.ttf');
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -6,23 +11,37 @@ html, body {
     background-color: white;
 }
 
+h1 {
+    font-family: 'SUBWT';
+    font-size: 5em;
+    text-align: center;
+}
+
+button {
+    margin-left: 43vw;
+    height: 100px;
+    width: 200px;
+}
+
+input[type='number'] {
+    margin-left: 45vw;
+}
+
 #grid {
     position: relative;
-    margin: 10% auto;
-    display: grid;
-    height: 386px;
-    width: 386px;
-    grid-template-columns: 19px 19px 19px 19px 19px 19px 19px 19px 19px 19px 19px
-        19px 19px 19px 19px 19px;
-    grid-template-rows: 19px 19px 19px 19px 19px 19px 19px 19px 19px 19px 19px
-        19px 19px 19px 19px 19px;
+    margin: 10vh 30vw 1vh 35vw;
+    display: flex;
+    flex-wrap: wrap;
     background-color: white;
+    height: 500px;
+    width: 500px;
 }
 
 .sqr {
-    height: 16px;
-    width: 16px;
+    height: 27px;
+    width: 27px;
     border: 1px #a19f9f33 solid;
     background-color: aquamarine;
     opacity: 1;
+    margin: 1px;
 }

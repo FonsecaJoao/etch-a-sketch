@@ -6,7 +6,12 @@ function buildGrid() {
         div = document.createElement('div');
         grid.appendChild(div);
         div.className = 'sqr';
+        div.addEventListener('mouseover', hover);
     }
 };
+
+function hover() {
+    this.style.background = 'black';
+}
 
 buildGrid();

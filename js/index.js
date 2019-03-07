@@ -2,8 +2,6 @@ let grid = document.getElementById('grid');
 const clear = document.getElementById('clear');
 const pixel = document.getElementById('pixel');
 
-
-
 function buildGrid() {
     grid.innerHTML = '';
     const margin = pixel.value * 2;
@@ -28,7 +26,7 @@ function buildGrid() {
 };
 
 function hover() {
-    this.style.backgroundColor = 'black';
+    this.style.backgroundColor = getRandomRgb();
 }
 
 function clearGrid() {
@@ -36,6 +34,14 @@ function clearGrid() {
     for (let i = 0; i <  sqr.length; i++) {
         sqr[i].style.backgroundColor = 'aquamarine';
     }
+}
+
+function getRandomRgb() {
+    var num = Math.round(0xffffff * Math.random());
+    var r = num >> 16;
+    var g = num >> 8 & 255;
+    var b = num & 255;
+    return 'rgb(' + r + ', ' + g + ', ' + b + ')';
 }
 
 clear.addEventListener('click', clearGrid);

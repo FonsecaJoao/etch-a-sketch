@@ -27,6 +27,11 @@ function buildGrid() {
 
 function hover() {
     this.style.backgroundColor = getRandomRgb();
+    let currentOpacity = +this.style.opacity;
+        if(currentOpacity < 1){
+            currentOpacity += 0.15;
+        }
+        this.style.opacity = currentOpacity;
 }
 
 function clearGrid() {

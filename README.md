@@ -14,7 +14,7 @@ learned with DOM Manipulation.
 
 ## Screenshot
 
-![Screenshot](./screenshot.png "Screenshot of the Web App")
+![Screenshot](img/screenshot.png "Screenshot of the Project Website")
 
 
 ## Contributing
